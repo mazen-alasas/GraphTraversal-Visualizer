@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graph Visualizer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://unpkg.com/vis-network@9.1.2/dist/vis-network.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="main_section">
+            <h2>Searching Algorithms & Graph Visualizer</h2>
+            <div class="input_center">
+                <label>Nodes:</label>
+                <input class="node_input" type="text" id="nodes" value="">
+                <label>Edges:</label>
+                <input class="edge_input" type="text" id="edges" value="">
+                <label>Choose the algorithm:</label>
+                <select id="algorithm">
+                    <option value="BFS">BFS</option>
+                    <option value="DFS">DFS</option>
+                </select>
+                <div class="node_inputs">
+                    <div>
+                        <label>Start:</label>
+                        <input class="start_input" type="text" id="start_node" value="">
+                    </div>
+                    <div>
+                        <label>Target:</label>
+                        <input class="target_input" type="text" id="target_node" value="">
+                    </div>
+                </div>
+            </div>
+            <div class="action_buttons">
+                <button onclick="createGraph()">Create Graph</button>
+                <button onclick="runAlgorithm()">Run Algorithm</button>
+            </div>
+        </div>
+        
+        <div class="visualizer_section">
+            <div class="visualizer" id="network"></div>
+            <button class="show_path" onclick="printPath()">Show Path</button>
+            <div id="path_display"></div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
