@@ -1,0 +1,34 @@
+Linear Graph
+
+Nodes: A,B,C,D,E
+Edges: A-B,B-C,C-D,D-E
+
+----------------------------------
+Circular Graph
+
+Nodes: A,B,C,D,E
+Edges: A-B,B-C,C-D,D-E,E-A
+
+----------------------------------
+Tree Graph
+
+Nodes: A,B,C,D,E,F,G
+Edges: A-B,A-C,B-D,B-E,C-F,C-G
+
+----------------------------------
+Complex Graph
+
+Nodes: A,B,C,D,E,F,G,H
+Edges: A-B,A-C,B-D,B-E,C-F,C-G,D-H,E-H,F-H,G-H
+
+----------------------------------
+Disconnected Graph
+
+Nodes: A,B,C,D,E,F
+Edges: A-B,B-C,D-E,E-F
+
+----------------------------------
+Grid Graph
+
+Nodes: A,B,C,D,E,F,G,H,I
+Edges: A-B,A-D,B-C,B-E,D-E,D-G,E-F,E-H,G-H,H-I,F-I,C-F
